@@ -1,7 +1,6 @@
 <ion-header [translucent]="false">
-  <ion-toolbar color="danger">
-    
-      <ion-item  lines="none" color="danger">
+  <ion-toolbar>
+      <ion-item  lines="none" >
         <ion-avatar slot="start">
           <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
         </ion-avatar>
@@ -16,6 +15,28 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" >
+
+<ion-toolbar >
+  <ion-item lines="none" >
+    <ion-icon name="eye-outline"></ion-icon>
+    <ion-label> <ion-card-title>saldo em conta</ion-card-title></ion-label>
+  </ion-item>
+
+  <ion-item >
+    <ion-label> <ion-card-subtitle>valor total:</ion-card-subtitle> 
+    <h1>R$ 250.000,00</h1>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="none"  >
+    <ion-label>
+      <ion-card-subtitle>valor total de saque: R$ 30.000,00</ion-card-subtitle>
+    </ion-label>
+  </ion-item>
+
+
+</ion-toolbar>
+  <!--
   <ion-card>
     
     <ion-card-header>
@@ -34,4 +55,89 @@
     </ion-item>
     </ion-card-content>
   </ion-card>
+-->
+
+
+
+<ion-list>
+  <swiper-container slides-per-view="3" free-mode="true">
+    <swiper-slide *ngFor="let option of options">
+      <div class="container ion-text-left" >
+      <ion-icon [name]="option.icon"></ion-icon>
+
+      <span>{{ option.text }}</span>
+    </div>
+    </swiper-slide>
+  </swiper-container>
+</ion-list>
+
+
+<ion-card class="stilo-unico">
+  <ion-card-header >
+  <ion-item>
+    <ion-label slot="end"> <ion-card-subtitle class="ajuste">expandir <ion-icon name="chevron-down-outline"></ion-icon> </ion-card-subtitle></ion-label>
+    <ion-label> <ion-card-title color="dark">Santander Visa <span>S</span>X</ion-card-title>
+    <ion-label> <ion-card-subtitle><span>visa</span> final 4577</ion-card-subtitle> </ion-label>
+  </ion-label>
+</ion-item>
+</ion-card-header>
+<ion-item>
+  <ion-button fill="clear" color="danger">ver fatura </ion-button>
+  <ion-button fill="clear" color="danger">cartão virtual</ion-button>
+</ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-item>
+     <ion-label slot="end"> <ion-card-subtitle>expandir <ion-icon name="chevron-down-outline"></ion-icon> </ion-card-subtitle></ion-label>
+     <ion-label > <ion-card-title>Organize <br> suas finanças</ion-card-title> </ion-label>
+    </ion-item>
+  </ion-card-header>
+  
+  <ion-item>
+    <ion-button fill="clear" color="danger">ver contratos</ion-button>
+  </ion-item>
+
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-item>
+     <ion-label slot="end"> <ion-card-subtitle>expandir <ion-icon name="chevron-down-outline"></ion-icon> </ion-card-subtitle></ion-label>
+     <ion-label > <ion-card-title>Empréstimo</ion-card-title> </ion-label>
+    </ion-item>
+  </ion-card-header>
+  
+  <ion-item>
+    <ion-button fill="clear" color="danger">ver mais</ion-button>
+  </ion-item>
+
+</ion-card>
+
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Card Title</ion-card-title>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Card Title</ion-card-title>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>
+
+
 </ion-content>

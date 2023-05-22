@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  public options: Array<any> =[
+    { icon: 'person-add-outline', text: 'indicar amigos'},
+    { icon: 'phone-portrait-outline', text: 'recarga de celular'},
+    { icon: 'wallet-outline', text: 'depositar'},
+    { icon: 'options-outline', text: 'ajustar limite'}
+
+  ];
   constructor() {}
 
 }

@@ -1,1 +1,11 @@
+ion-tabs{
+    ion-tab-bar{
+        --background: none;
+        background: red;
 
+        ion-tab-button{
+            color: #fff;
+        }
+    }
+
+}

@@ -1,4 +1,121 @@
 h1{
-    color: black;
+    color: #fff;
     font-weight: 700;
+}
+
+
+
+ion-header{
+    ion-toolbar{
+        ion-item{
+            --background: none;
+            background: red;
+        }
+        
+        ion-label{
+            color: #fff;
+        }
+    }
+}
+
+
+
+ion-content{
+    --background: none;
+    background: rgb(231, 209, 209);
+    border-bottom-left-radius: 5px;
+    ion-toolbar{
+        margin-bottom: 20px;
+        ion-item{
+            --background: none;
+            background: red;
+            
+            ion-card-title{
+                
+                color: #fff;
+                margin-left: 18px;
+                margin-top: 20px;
+            }
+            ion-icon{
+                color: #fff;
+                margin-top: 22px;
+
+            }
+            ion-label{
+                ion-card-subtitle{
+                    color: #f4f4f4;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                }
+            }
+        }
+        
+    }
+}
+
+ion-list{
+    background: transparent;
+
+    swiper-container{
+        background: transparent;
+
+        swiper-slide{
+            .container{
+                color: black;
+                width: 100px;;
+                height: 100px;
+                background: #f1f1f1;
+
+                border-radius: 5px;
+                padding: 10px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                ion-icon{
+                    font-size: 24px;
+                    color: red;
+                }
+
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.stilo-unico{
+    border-top: 8px solid red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+ion-card{
+    
+    ion-card-header{
+        ion-item{
+            ion-card-title{
+                margin-top: 12px;
+                margin-bottom: 20px;
+                color: #000;
+                span{
+                    color: red;
+                }
+            }
+            ion-card-subtitle{
+                color: #090909;
+                margin-bottom: 35px;
+                span{
+                    color: blue;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+    }
 }
