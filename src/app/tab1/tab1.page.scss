@@ -25,6 +25,8 @@ ion-content{
     background: rgb(231, 209, 209);
     border-bottom-left-radius: 5px;
     ion-toolbar{
+        --background:none;
+        background: red;
         margin-bottom: 20px;
         ion-item{
             --background: none;
