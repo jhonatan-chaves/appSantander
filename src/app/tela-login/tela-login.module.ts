@@ -8,13 +8,17 @@ import { TelaLoginPageRoutingModule } from './tela-login-routing.module';
 
 import { TelaLoginPage } from './tela-login.page';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TelaLoginPageRoutingModule
+    TelaLoginPageRoutingModule,
+    
+    
   ],
+  
   declarations: [TelaLoginPage]
 })
 export class TelaLoginPageModule {}

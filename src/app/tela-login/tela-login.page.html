@@ -22,10 +22,10 @@
       <ion-text>
         <ion-card-subtitle>senha eletronica</ion-card-subtitle>
       </ion-text>
-      <ion-input ><ion-icon name="bag-add-outline"></ion-icon></ion-input>
+      <ion-input  placeholder="digite sua senha" [(ngModel)]="senha" ><ion-icon name="bag-add-outline"></ion-icon></ion-input>
     </ion-label>
   </ion-item>
-  <ion-button>acessar</ion-button>
+  <ion-button  (click)="serviceService.valid(senha)">acessar</ion-button>
 
 
   <ion-item class="itens-2" lines="none">

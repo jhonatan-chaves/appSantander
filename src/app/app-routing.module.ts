@@ -4,12 +4,13 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./tela-login/tela-login.module').then( m => m.TelaLoginPageModule)
   },
   {
-    path: 'tela-login',
-    loadChildren: () => import('./tela-login/tela-login.module').then( m => m.TelaLoginPageModule)
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   }
+ 
  
 ];
 @NgModule({
