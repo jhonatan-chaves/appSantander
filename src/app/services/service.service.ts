@@ -6,11 +6,42 @@ import { ToastController } from '@ionic/angular';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class ServiceService {
 
 
-private pessoas : Array< any>  = [125, "bulma", "piculo"]
-private senha1: any = 125;
+
+
+private pessoas : Array< any>  = ["125", "bulma", "piculo"];
+
+ private pessoaa = [
+  {
+    nome: "jhonatan",
+    senha: "1234",
+    dinheiro: "250.000.00"
+  },
+  {
+    nome: "goku",
+    senha: "202020",
+    dinheiro: "10.544,26"
+  },
+  {
+    nome: "luffy",
+    senha: "hojenao",
+    dinheiro: "2.325,12",
+  }
+]
+
+nomes = this.pessoaa.map(person => person.nome);
+senhas = this.pessoaa.map(person => person.senha);
+dinheiros = this.pessoaa.map(person => person.dinheiro);
+
+
+public getObjeto(){
+  return this.pessoaa;
+}
+
 
 public getPessoas(): Array<string>{
   return this.pessoas;
@@ -22,8 +53,11 @@ public setValor(value: any){
 }
 
 
+
+
+
 public valid(senha: any){
-  if(this.pessoas.includes(senha)){
+  if(this.senhas.includes(senha)){
     return this.goToLogin();
   }else{
      this.presentToast();
